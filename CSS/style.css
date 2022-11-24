@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  }
+
+body{
+  margin: 50px;
+  line-height: 30px;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  flex-basis: 50%;
+  font-family: 'Sorts Mill Goudy', serif;
+}
+.imagegauche img{
+    width: 10%;
+    border-radius: 50% 50%;
+}
+.navbar imagegauche{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.liensgauche{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 50%;
+
+ }
+.liensdroite{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 50%;
+}
+.bandeaunom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.bloc{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-basis: 50%;
+}
+.competences{
+  align-items: center;
+}
+.experiences{
+  align-items: center;
+}
+h2{
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+#h2{
+
+}
+p{
+  font-family: 'Sorts Mill Goudy', serif;
+}
