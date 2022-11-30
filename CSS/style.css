@@ -2,72 +2,118 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style: none;
   }
-
-body{
-  margin: 50px;
-  line-height: 30px;
+#imagecover{
+  background-image: url(https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+#imagecover h1{
+  position: absolute;
+  font-size: 3em;
+  color: white;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  }
+#imagecover h2{
+  position: absolute;
+  font-size: 2em;
+  color: white;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 250px;
+}
+#imagecover h1, h2{
+  border-radius: 10px;
+  border: white;
+  background-color: #00000052;
+  padding: 15px;
+}
+#imagecover .bouton{
+  position: absolute;
+  border-radius: 10px;
+  border: #fecb7e solid;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 500px;
+  padding: 10px;
+  font-weight: bold;
+}
+#imagecover .bouton:hover{
+  background-color: #fecb7e;
+  color: black;
 }
 .navbar{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  background-color: black;
+  text-align: center;
+  font-size: 2em;
+  width: 100%;
+  justify-content: space-around;
   align-items: center;
-  margin: 20px;
-  flex-basis: 50%;
+  height: 100px;
+}
+
+
+#bloc{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  margin-top: 215px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+#bloc .carte1{
+  box-shadow: 0px 10px 30px black;
+  border-radius: 10px;
+  width: 50%;
   font-family: 'Sorts Mill Goudy', serif;
+  font-size: 1.5em;
 }
-.imagegauche img{
-    width: 10%;
-    border-radius: 50% 50%;
-}
-.navbar imagegauche{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-.liensgauche{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-basis: 50%;
-
- }
-.liensdroite{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-basis: 50%;
-}
-.bandeaunom{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  font-family: 'Montserrat', sans-serif;
-
-}
-.bloc{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-basis: 50%;
-}
-.competences{
-  align-items: center;
-}
-.experiences{
-  align-items: center;
-}
-h2{
-  padding: 15px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-}
-#h2{
-
-}
-p{
+#bloc .carte2{
+  box-shadow: 0px 10px 30px black;
+  border-radius: 10px;
+  width: 50%;
   font-family: 'Sorts Mill Goudy', serif;
+  font-size: 1.5em;
+}
+#bloc .carte3{
+  box-shadow: 0px 10px 30px black;
+  border-radius: 10px;
+  flex-grow: 1;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 1.5em;
+  height: 1250px;
+}
+.carte1.logo img{
+  width: 2%;
+}
+.footer{
+  position: relative;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 1.5em;
+  background-color: #fecb7e;
+}
+
+.footer .lienscontact{
+  justify-content: center;
+  align-items: center;
+}
+.footer .lienscontact img{
+  justify-content: center;
+  align-items: center;
+  width:3%;
+  height: 2%;
 }
