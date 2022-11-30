@@ -71,31 +71,103 @@
   flex-direction: row;
   flex-wrap:wrap;
   justify-content: space-between;
-  margin-top: 215px;
   padding: 50px;
   box-sizing: border-box;
 }
 #bloc .carte1{
-  box-shadow: 0px 10px 30px black;
   border-radius: 10px;
-  width: 50%;
+  width: 48%;
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 1.5em;
+  background-image: url(https://th.bing.com/th/id/R.28b83ac3adf031bda65d0bbd2dd75563?rik=OQG0em3ah5qM4A&riu=http%3a%2f%2fwww.maximumwall.com%2fwp-content%2fuploads%2f2016%2f10%2ffond-ecran-wallpaper-image-abstrait-noir-et-blanc-19.jpg&ehk=T%2fHq7GkWlG8RJp5J1BYP2M9Umy6Svk54I60WbHiNBWo%3d&risl=&pid=ImgRaw&r=0);
+  background-size: 100%;
+
 }
 #bloc .carte2{
-  box-shadow: 0px 10px 30px black;
   border-radius: 10px;
-  width: 50%;
+  width: 48%;
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 1.5em;
+  background-repeat: no-repeat;
+  background-image: url(https://mcdn.wallpapersafari.com/medium/45/7/fhmPoD.jpg);
 }
 #bloc .carte3{
-  box-shadow: 0px 10px 30px black;
+  margin-top: 20px;
   border-radius: 10px;
   flex-grow: 1;
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 1.5em;
-  height: 1250px;
+  background-image: url(https://th.bing.com/th/id/R.79bcc080cf6647ac821f26fd70c0a254?rik=1FDQrtCV9OAUXQ&riu=http%3a%2f%2fglass-hart.com%2fwp-content%2fuploads%2f2020%2f09%2fA038.jpg&ehk=i5fgNQZJ4FYZVrLxIHG%2bV2aiVO31WmxYoIbFqVnxqvM%3d&risl=&pid=ImgRaw&r=0);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#bloc h2{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+#bloc ul{
+  padding-top: 20px;
+}
+#bloc img{
+  padding-top: 20px;
+  width: 12%;
+}
+.timeline{
+  width: 1280px;
+  height: 45px;
+  list-style: none;
+  text-align: justify;
+  margin: 200px auto;
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, rgba(191,128,11,1) 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
+}
+.timeline:after{
+  display: inline-block;
+  content: "";
+  width: 100%;
+}
+.timeline li{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 1.2;
+  position: relative;
+  border-radius: 50%;
+  background: #F2BB13;
+
+}
+.timeline li:before{
+  display: inline-block;
+  content: attr(data-year);
+  font-size: 26px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.timeline li:nth-child(odd):before{
+  top:-40px;
+}
+.timeline li:nth-child(even):before{
+  bottom: -40px;
+}
+
+.timeline li:after {
+	display: inline-block;
+	content: attr(data-text);
+	font-size: 16px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.timeline li:nth-child(odd):after {
+	bottom: 0;
+	margin-bottom: -10px;
+	transform: translate(-50%, 100%);
+}
+.timeline li:nth-child(even):after {
+	top: 0;
+	margin-top: -10px;
+	transform: translate(-50%, -100%);
 }
 .carte1.logo img{
   width: 2%;
