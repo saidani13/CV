@@ -4,6 +4,7 @@
   text-decoration: none;
   list-style: none;
   }
+
 #imagecover{
   background-image: url(https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
   height: 100vh;
@@ -42,31 +43,36 @@
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
+
 #imagecover .bouton{
-  position: absolute;
   border-radius: 10px;
-  border: #fecb7e solid;
+  border: white;
+  background-color: #00000052;
+  padding: 15px;
+  margin-top: 460px;
+  text-align: center;
+  font-size: 1.5rem;
   color: white;
   font-family: 'Montserrat', sans-serif;
-  margin-top: 500px;
-  padding: 10px;
+}
+
+#imagecover .bouton:hover{
+  background: white;
+  color: black;
   font-weight: bold;
 }
-#imagecover .bouton:hover{
-  background-color: #fecb7e;
-  color: black;
-}
+
 .navbar{
   display: flex;
   background-color: black;
   text-align: center;
-  font-size: 2em;
+  font-size: 1em;
   width: 100%;
   justify-content: space-around;
   align-items: center;
   height: 100px;
+  font-family: 'Montserrat', sans-serif;
 }
-
 
 #bloc{
   display: flex;
@@ -95,7 +101,6 @@
   background-image: url(https://image.shutterstock.com/image-illustration/abstract-background-260nw-191947724.jpg);
   }
 #bloc .carte3{
-
   margin-top: 20px;
   border-radius: 10px;
   flex-grow: 1;
@@ -106,12 +111,16 @@
   background-size: 100%;
   width: 100%;
 }
-#bloc .carte1 .carte2 .carte3 h2{
+#bloc .carte1 h2{
+  color: #fecb7e;
+}
+#bloc .carte2 h2{
+  color: #fecb7e;
+}
+#bloc .carte3 h2{
   color: #fecb7e;
 }
  .scroller{
-  /* width:1200px; */
-  /* height: 590px; */
   overflow-x: scroll;
   scrollbar-color: yellow black;
   scrollbar-width: thin;
@@ -120,6 +129,7 @@
 #bloc ul{
   padding-top: 20px;
   padding-left: 50px;
+
 }
 #bloc img{
   padding-top: 20px;
@@ -199,4 +209,29 @@
 .footer .lienscontact img{
   width:3%;
   height: 2%;
+}
+
+
+@media screen and (max-width: 900px){
+
+#bloc{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 1em;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.carte1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.navbar{
+  display: flex;
+
 }
