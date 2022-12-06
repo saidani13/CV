@@ -4,11 +4,50 @@
   text-decoration: none;
   list-style: none;
   }
+body{
+  background-color: #000000f0;
+}
+#imagecover .navbar{
+  position: absolute;
+  display: flex;
+  background-color: #00000030;
+  text-align: center;
+  font-size: 1.2em;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 50px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  top: 0;
+  }
+#imagecover .navbar li{
+  color: white;
+  top: 0;
+    }
+#imagecover img{
+  display: none;
+}
+  #imagecover .navbar .nav-links ul{
+    display: flex;
+  }
+  #imagecover .navbar .nav-links ul li{
+    margin: 0 25px;
+    font-size: 1.2em;
+    }
+    #imagecover .navbar .nav-links ul li:hover{
+      color: #fecb7e;
+    }
+  #imagecover .navbar .nav-links ul li.active a{
+    color: yellow;
+    font-weight: 1.2em;
+  }
+
 
 #imagecover{
   background-image: url(https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -21,12 +60,22 @@
 }
 #imagecover h1{
   position: absolute;
-  font-size: 3em;
+  font-size: 2.5em;
   color: white;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  z-index: 0;
+  line-height: 110px;
+  border-radius: 10px;
+  border: white;
+  background-color: #00000052;
+  padding: 15px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
   }
+
+}
 #imagecover h2{
   position: absolute;
   font-size: 2em;
@@ -35,44 +84,53 @@
   font-family: 'Montserrat', sans-serif;
   margin-top: 250px;
 }
-#imagecover h1, h2{
-  border-radius: 10px;
-  border: white;
-  background-color: #00000052;
-  padding: 15px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-}
 
-#imagecover .bouton{
-  border-radius: 10px;
-  border: white;
-  background-color: #00000052;
-  padding: 15px;
-  margin-top: 460px;
-  text-align: center;
-  font-size: 1.5rem;
+#cv{
+  position: absolute;
+  top: 40px;
   color: white;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  right: 8px;
+  top: 74px;
+}
+#cv:hover{
+  color: #fecb7e
+}
+#imagecover .pulse-anim{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #000;
+  margin: 100px;
+  box-shadow: 0 0 0 0 #000;
+  animation: pulse 1.3s infinite;
+  top: 750px;
+}
+@keyframes pulse{
+  to{
+    box-shadow: 0 0 0 18px rgba(0,0,0,0.01);
+  }
 }
 
-#imagecover .bouton:hover{
+
+#imagecover .pulse:hover{
   background: white;
   color: black;
   font-weight: bold;
 }
 
-.navbar{
-  display: flex;
-  background-color: black;
-  text-align: center;
-  font-size: 1em;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  height: 100px;
-  font-family: 'Montserrat', sans-serif;
+#imagecover .navbar .menu-hamburger{
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 35px;
 }
+
+
 
 #bloc{
   display: flex;
@@ -83,42 +141,53 @@
   box-sizing: border-box;
 }
 #bloc .carte1{
+  margin-top: 20px;
+  padding-top: 20px;
+  box-sizing: border-box;
   border-radius: 10px;
   width: 48%;
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 1.5em;
-  background-image: url(https://image.shutterstock.com/image-illustration/white-background-260nw-114461833.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-color:#f6f3f1f5;
 }
 #bloc .carte2{
+  margin-top: 20px;
+  padding-top: 20px;
+  box-sizing: border-box;
   border-radius: 10px;
   width: 48%;
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 1.5em;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-image: url(https://image.shutterstock.com/image-illustration/abstract-background-260nw-191947724.jpg);
+  background-color:#f6f3f1f5;
   }
 #bloc .carte3{
   margin-top: 20px;
+  padding-top: 20px;
+  box-sizing: border-box;
   border-radius: 10px;
   flex-grow: 1;
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 1.5em;
-  background-image: url(https://media.istockphoto.com/photos/abstract-background-picture-id499935926?k=6&m=499935926&s=612x612&w=0&h=gMz4-_1x69VWZLk1bcjqZTgAAxZ00Yjx2xmtHyNOb-I=);
-  background-repeat: no-repeat;
+  background-color:#f6f3f1f5;
   background-size: 100%;
   width: 100%;
 }
 #bloc .carte1 h2{
   color: #fecb7e;
+  text-align: center;
+  border: 2px, solid;
+  border-radius: 10px;
+  border-color: black;
 }
 #bloc .carte2 h2{
-  color: #fecb7e;
+  color:#fecb7e;
+  text-align: center;
 }
 #bloc .carte3 h2{
   color: #fecb7e;
+  text-align: center;
 }
  .scroller{
   overflow-x: scroll;
@@ -127,8 +196,8 @@
 }
 
 #bloc ul{
-  padding-top: 20px;
   padding-left: 50px;
+  font-size: 1.5em;
 
 }
 #bloc img{
@@ -157,7 +226,6 @@
   position: relative;
   border-radius: 50%;
   background: #F2BB13;
-
 }
 .timeline li:before{
   display: inline-block;
@@ -212,8 +280,53 @@
 }
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 480px){
 
+#imagecover .navbar{
+  padding: 0;
+  }
+  #imagecover .navbar .menu-hamburger{
+    display: block;
+  }
+  #imagecover img{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: block;
+    z-index: 1;}
+
+
+
+.nav-links{
+    display: none;
+  }
+
+ .mobile-menu{
+    margin-left: 0px;
+    position: absolute;
+    /* background-color: white; */
+    backdrop-filter: blur(7px);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 2s ease;
+    z-index: 1;
+  }
+
+  #imagecover .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #imagecover .navbar .nav-links ul li{
+    margin: 25px;
+    font-size: 1.2em;
+  }
 #bloc{
   display: flex;
   flex-direction: column;
@@ -230,8 +343,4 @@
   align-items: center;
 
 }
-
-.navbar{
-  display: flex;
-
 }
