@@ -5,7 +5,7 @@
   list-style: none;
   }
 body{
-  background-color: #000000f0;
+  background-color: #000000;
 }
 #imagecover .navbar{
   position: absolute;
@@ -30,6 +30,8 @@ body{
 }
   #imagecover .navbar .nav-links ul{
     display: flex;
+    font-size: 1.5em;
+
   }
   #imagecover .navbar .nav-links ul li{
     margin: 0 25px;
@@ -70,9 +72,10 @@ body{
   border-radius: 10px;
   border: white;
   background-color: #00000052;
-  padding: 15px;
+  padding: 40px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  z-index: 0
   }
 
 }
@@ -150,6 +153,10 @@ body{
   font-size: 1.5em;
   background-color:#f6f3f1f5;
 }
+.carte1 .logos{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 #bloc .carte2{
   margin-top: 20px;
   padding-top: 20px;
@@ -177,17 +184,17 @@ body{
 #bloc .carte1 h2{
   color: #fecb7e;
   text-align: center;
-  border: 2px, solid;
-  border-radius: 10px;
-  border-color: black;
+  background-color: black;
 }
 #bloc .carte2 h2{
   color:#fecb7e;
   text-align: center;
+  background-color: black;
 }
 #bloc .carte3 h2{
   color: #fecb7e;
   text-align: center;
+  background-color: black;
 }
  .scroller{
   overflow-x: scroll;
@@ -197,6 +204,7 @@ body{
 
 #bloc ul{
   padding-left: 50px;
+  padding-top: 20px;
   font-size: 1.5em;
 
 }
@@ -206,7 +214,7 @@ body{
 }
 .timeline{
   width: 3000px;
-  height: 45px;
+  height: 67px;
   list-style: none;
   text-align: justify;
   margin: 200px auto;
@@ -267,16 +275,15 @@ body{
   text-align: center;
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 1.5em;
-  background-color: #fecb7e;
+  background-color: #000000f0;
 }
 
-.footer .lienscontact{
-  justify-content: center;
-  align-items: center;
-}
+
 .footer .lienscontact img{
   width:3%;
-  height: 2%;
+  height: 1%;
+  padding: 60px;
+  background-color: #0000000;
 }
 
 
