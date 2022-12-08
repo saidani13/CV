@@ -146,6 +146,8 @@ select:focus {
   outline: none; }
 
 .tabs {
+  background-color: white;
+  border-radius: 10px;
   display: block;
   display: -webkit-flex;
   display: -moz-flex;
@@ -153,7 +155,6 @@ select:focus {
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 20px;
   overflow: hidden; }
   .tabs [class^="tab"] label,
   .tabs [class*=" tab"] label {
@@ -168,7 +169,7 @@ select:focus {
     text-align: center; }
   .tabs [class^="tab"] [type="radio"],
   .tabs [class*=" tab"] [type="radio"] {
-    border-bottom: 1px solid #fecb7e;
+    border-bottom: 5px solid #fecb7e;
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -217,30 +218,38 @@ h4{
 }
 
 .formation ul{
+  margin-left: 40px;
   font-size: 1.3em;
   font-family: 'Sorts Mill Goudy', serif;
-  }
+}
 .content ul{
   font-size: 1.3em;
   font-family: 'Sorts Mill Goudy', serif;
-  margin-left: 900px;
-  }
-
-.content ul.logos{
-  margin-left: 200px;
+  margin-left: 1200px;
 }
+.logos{
+  margin-left: 1179px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.content ul.logos{
+  margin-left: 400px;
+}
+.banniere img{
+  width: 100%;
+  margin-right: 20px;
 
+
+}
 #bloc{
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
   justify-content: space-between;
-  padding: 50px;
   box-sizing: border-box;
 }
 
 #bloc .carte3{
-  margin-top: 20px;
   padding-top: 20px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -249,13 +258,14 @@ h4{
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 1.5em;
   background-size: 100%;
+  background-color: white;
   width: 100%;
 }
-
-
 #bloc .carte3 h2{
   color: #fecb7e;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
   }
  .scroller{
   overflow-x: scroll;
@@ -332,19 +342,18 @@ h4{
 .carte1.logo img{
   width: 2%;
 }
-.footer{
-  text-align: center;
-  font-family: 'Sorts Mill Goudy', serif;
-  font-size: 1.5em;
-  background-color: #000000f0;
-}
 
 
-.footer .lienscontact img{
-  width:5%;
-  height: 1%;
-  padding: 60px;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 480px){
@@ -371,7 +380,7 @@ h4{
  .mobile-menu{
     margin-left: 0px;
     position: absolute;
-    /* background-color: white; */
+   background-color: white;
     backdrop-filter: blur(7px);
     width: 100%;
     height: 100vh;
@@ -410,4 +419,16 @@ h4{
   align-items: center;
 
 }
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer .lienscontact img{
+
+  padding: 10px;
+  width:5%;
+  height: 1%;
+
 }
